@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Events | Event Management</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8f9fa;
+color:#333;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#ff4d6d;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+font-weight:500;
+color:#333;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff4d6d;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1600&q=80") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+padding:15px 35px;
+background:#ff4d6d;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#ff1f50;
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#ff4d6d;
+}
+
+.about{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.about p{
+line-height:1.8;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 15px 30px rgba(0,0,0,.08);
+transition:.4s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin:20px 0;
+color:#ff4d6d;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:12px;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.contact{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+}
+
+form input,
+form textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+background:#eee;
+border-radius:8px;
+}
+
+form button{
+padding:15px;
+width:100%;
+background:#ff4d6d;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+margin:10px;
+display:inline-block;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Royal Events
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Creating Unforgettable Events</h1>
+
+<p>
+Wedding • Birthday • Corporate • Engagement • Concert • Party
+</p>
+
+<a href="#contact" class="btn">
+Book Your Event
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=80">
+
+<div>
+
+<h2>Welcome to Royal Events</h2>
+
+<br>
+
+<p>
+
+We are a professional event management company dedicated to making your special moments unforgettable. Our experienced planners organize weddings, birthday parties, corporate events, concerts, anniversaries, and private celebrations with creativity and perfection.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+
+<h3>Wedding Planning</h3>
+
+<p>Luxury wedding planning with elegant decoration.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Birthday Party</h3>
+
+<p>Creative birthday celebrations for kids and adults.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Corporate Events</h3>
+
+<p>Professional seminars, meetings and conferences.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Concerts</h3>
+
+<p>Music shows, festivals and entertainment events.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Photography</h3>
+
+<p>Professional photography and cinematic videography.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Decoration</h3>
+
+<p>Beautiful floral and theme decoration services.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="title">Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80">
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<div class="contact">
+
+<div>
+
+<h2>Let's Plan Your Dream Event</h2>
+
+<br>
+
+<p>
+
+📍 Kathmandu, Nepal
+
+</p>
+
+<br>
+
+<p>
+
+📞 +977-9800000000
+
+</p>
+
+<br>
+
+<p>
+
+✉ info@royalevents.com
+
+</p>
+
+</div>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<input type="text" placeholder="Phone">
+
+<textarea rows="5" placeholder="Tell us about your event"></textarea>
+
+<button>Send Message</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Royal Events | Designed with ❤️
+
+</footer>
+
+<script>
+
+const cards=document.querySelectorAll('.card');
+
+window.addEventListener('scroll',()=>{
+
+cards.forEach(card=>{
+
+const top=card.getBoundingClientRect().top;
+
+if(top<window.innerHeight-100){
+
+card.style.opacity="1";
+card.style.transform="translateY(0)";
+
+}
+
+});
+
+});
+
+cards.forEach(card=>{
+
+card.style.opacity="0";
+card.style.transform="translateY(50px)";
+card.style.transition=".7s";
+
+});
+
+</script>
+
+</body>
+</html>
